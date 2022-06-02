@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+:root{
+    --colorPrimary: #2E948A;
+    --colorSecondary: #FF4081;
+    --colorTerciary: #555555;
+}
+
+span{
+    font-weight: bold;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    background-color: var(--colorPrimary);
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+
+ul{
+    font-weight: 400;
+    display: flex;
+    gap: 25px;
+}
+
+header nav a{
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.faixa:first-of-type{
+    display: flex;
+    justify-content: space-between
+}
+
+.faixa{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 100px;
+    padding: 100px;
+    width: 100%;
+}
+
+.faixa:nth-of-type(even){
+    background-color: #F6F6F6;
+}
+
+#titulo{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 30%;
+}
+
+h1{
+    color: var(--colorSecondary);
+    font-size: 60px;
+    text-align: left;
+}
+
+p{
+    color: var(--colorTerciary);
+    font-size: 27px;
+}
+
+button{
+    font-size: 27px;
+    color: var(--colorSecondary);
+    background-color: white;
+    border: var(--colorSecondary) 2px solid;
+    border-radius: 20px;
+    padding: 5px;
+    width: 75%;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    gap: 25px;
+    text-align: center;
+}
+
+.item img{
+    width: 280px;
+}
+
+.item h2{
+    color: var(--colorSecondary);
+    font-size: 30px;
+}
+
+.item button{
+    background-color: var(--colorSecondary);
+    color: white;
+    font-weight: 300;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+#o-que-falam-de-nós{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#o-que-falam-de-nós h2{
+    color: var(--colorPrimary);
+    font-size: 37px;
+    font-weight: 400;
+}
+
+#perfis{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.perfil{
+    display: flex;
+    width: 50%;
+    gap: 20px;
+    padding: 20px;
+}
+
+.perfil img{
+    width: 105px;
+    height: 105px;
+}
+
+#mais-conteudo-pra-vc{
+    display: flex;
+    flex-direction:column;
+}
+
+#mais-conteudo-pra-vc h2{
+    color: var(--colorPrimary);
+    font-size: 37px;
+}
+
+#mais-conteudo-pra-vc section{
+    display: flex;
+    gap: 50px;
+}
+
+#mais-conteudo-pra-vc h3{
+    color: var(--colorPrimary);
+    font-size: 30px;
+}
+
+#mais-conteudo-pra-vc article{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bloco-cinza{
+    background-color: var(--colorTerciary);
+    width: 100%;
+    height: 200px;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer{
+    padding: 50px;
+    gap: 200px;
+    background-color: var(--colorPrimary);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+    text-transform: lowercase;
+}
+
+footer a{
+    color: white;
+    font-size: 25px;
+}
+
+footer section:last-of-type{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 30%;
+}
+
+footer button{
+    background-color: transparent;
+    color: white;
+    border: white 1px solid;
+}
