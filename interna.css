@@ -39,45 +39,22 @@ header nav a{
 }
 
 main{
-    padding: 50px;
     display: flex;
     flex-direction: column;
-}
-
-main img{
-    width: 380px;
-    height: 380px;
-    margin: 0px;
-}
-
-.item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-}
-
-.curso{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin: 30px;
-}
-
-
-button{
-    font-size: 27px;
-    color: white;
-    background-color: var(--colorPrimary);
-    border: none;
-    border-radius: 30px;
-    padding: 15px;
-    width: 50%;
 }
 
 h1{
     color: var(--colorSecondary);
     font-size: 60px;
+    margin: 20px;
+}
+
+.faixa{
+    padding: 50px;
+}
+
+.faixa img{
+    height: 380px;;
 }
 
 h2{
@@ -88,6 +65,45 @@ h2{
 p{
     color: var(--colorTerciary);
     font-size: 28px;
+}
+
+.faixa{
+    display: flex;
+    justify-content: space-between;
+}
+
+.faixa article{
+    width: 50%;
+    gap: 50px;
+}
+
+#videos{
+    background-color: #F6F6F6;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.aula{
+    display: flex;
+    gap: 20px;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+button{
+    font-size: 27px;
+    color: white;
+    background-color: var(--colorPrimary);
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+    width: 50%;
 }
 
 footer{
@@ -121,4 +137,42 @@ footer button{
     background-color: transparent;
     color: white;
     border: white 1px solid;
+}
+
+@media only screen and (max-width: 1000px){
+
+    main section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1, h2, p{
+        text-align: center;
+    }
+
+    button{
+        width: 100%;
+    }
+
+   .faixa{
+       text-align: center;
+       display: flex;
+       flex-direction: column;
+       gap: 50px;
+   }
+
+   article{
+       display: flex;
+       flex-direction: column;
+   }
+
+   footer{
+       display: flex;
+       flex-direction: column;
+       gap: 50px;
+       text-align: center;
+   }
+
 }
