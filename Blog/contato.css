@@ -40,28 +40,14 @@ header nav a{
 
 main{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     padding: 50px;
     gap: 50px;
-    
 }
 
 h1{
     color:var(--colorSecondary);
     font-size: 47px;
-    text-align: center;
-}
-
-.post-imagem{
-    width: 50%;
-    height: 500px;
-    background-color: #555555;
-    align-self: center;
-}
-
-h2{
-    color:var(--colorPrimary);
-    font-size: 30px;
 }
 
 
@@ -77,8 +63,47 @@ button{
     border: none;
     border-radius: 30px;
     padding: 15px;
-    width: 25%;
+    width: 50%;
     margin: 50px 0px;
+}
+
+#form{
+    display: flex;
+    justify-content: space-between;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+fieldset{
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border: none;
+}
+
+input{
+    padding: 20px;
+    border-radius: 10px;
+    border: var(--colorTerciary) 1px solid;
+    font-size: 20px;
+}
+
+textarea{
+    padding: 20px;
+    border-radius: 10px;
+    border: var(--colorTerciary) 1px solid;
+    font-size: 20px;
+    height: 300px;
+}
+
+main img{
+    width: 50%;
+    height: 50%;
 }
 
 footer{
@@ -112,4 +137,41 @@ footer button{
     background-color: transparent;
     color: white;
     border: white 1px solid;
+}
+
+@media only screen and (max-width: 1000px){
+
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1, h2, p{
+        text-align: center;
+    }
+
+    #form img{
+        width: 500px;
+    }
+
+    #form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button{
+        width: 100%;
+    }
+
+   footer{
+       display: flex;
+       flex-direction: column;
+       gap: 50px;
+       text-align: center;
+   }
+
 }
