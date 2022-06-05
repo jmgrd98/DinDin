@@ -42,11 +42,26 @@ main{
     display: flex;
     flex-direction: column;
     padding: 50px;
+    gap: 50px;
+    
 }
 
 h1{
     color:var(--colorSecondary);
     font-size: 47px;
+    text-align: center;
+}
+
+.post-imagem{
+    width: 50%;
+    height: 500px;
+    background-color: #555555;
+    align-self: center;
+}
+
+h2{
+    color:var(--colorPrimary);
+    font-size: 30px;
 }
 
 
