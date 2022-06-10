@@ -4,6 +4,7 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
 }
 
 :root{
@@ -49,7 +50,7 @@ main{
 
 .faixa:first-of-type{
     display: flex;
-    justify-content: space-between
+    justify-content: space-around;
 }
 
 .faixa{
@@ -68,12 +69,12 @@ main{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    width: 30%;
+    width: 40%;
 }
 
 h1{
     color: var(--colorSecondary);
-    font-size: 60px;
+    font-size: 4rem;
     text-align: left;
 }
 
