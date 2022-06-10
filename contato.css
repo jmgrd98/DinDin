@@ -40,9 +40,9 @@ header nav a{
 
 main{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 50px;
-    gap: 50px;
+    gap: 25px;
 }
 
 h1{
@@ -70,11 +70,13 @@ button{
 #form{
     display: flex;
     justify-content: space-between;
+    width: 50%;
 }
 
 form{
     display: flex;
     flex-direction: column;
+    width: 100%;
     margin: 20px;
 }
 
@@ -101,9 +103,8 @@ textarea{
     height: 300px;
 }
 
-main img{
-    width: 50%;
-    height: 50%;
+img{
+    width: 150%;
 }
 
 footer{
