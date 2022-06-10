@@ -103,7 +103,8 @@ button{
 }
 
 .item img{
-    width: 280px;
+    width: 50%;
+    height: 50%;
 }
 
 .item h2{
@@ -117,6 +118,8 @@ button{
     font-weight: 300;
     padding: 20px;
     border-radius: 50px;
+    width: 100%;
+    cursor: pointer;
 }
 
 #o-que-falam-de-nós{
